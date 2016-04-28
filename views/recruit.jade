@@ -1,3 +1,56 @@
-//
-   Created by johns on 2016/4/28.
+extends layout
 
+block content
+   .ui.vertical.stripe.segment
+      .ui.middle.aligned.stackable.grid.container
+         .row
+            .center.aligned.column
+               h1  協会のご案内
+         .row
+            .twelve.wide.column
+               p.pre
+                  | 当会では当会の活動に賛同し、自らの持つスキルを活用することにより、広く企業のIT化を進めようとする気概のある技術者の参加をお待ちしております。。
+                  | 下記の条件に当てはまるエンジニアの方は是非ご応募ください。
+             .four.wide.right.floated.column
+               img.ui.large.bordered.rounded.image(src='assets/images/wireframe/white-image.png')
+         .row
+            .center.aligned.column
+               h2 アプリケーション開発者
+               ul.ui.list
+                  li Windowsデスクトップアプリ
+                  li Android、IOSアプリ
+                  li データベース
+                  li Eコマース
+                  li Wordpress等CMS、およびそのPlug-in
+                  li NFC（Near Field Communication）
+                  li Javascript/JQuery
+                  li Visual Basic
+                  li PHP
+                  li VBA
+                  li CakePHP
+                  li Email marketing
+                  li Google Adsense
+               h2 オンサイトサポート技術者
+               ul.ui.list
+                  li アプリケーション開発者
+               h2 WEBサイトデザイナー・コーダー
+               ul.ui.list
+                  li 企業向サイト制作
+                  li Bootstrap/CSS
+                  li JQuery
+                  li Google Analytics
+                  li Wordpress、Drupal、Movable Type等CMSでのサイト制作
+                  li ロゴデザイン
+                  li Illustrator/Photoshop
+
+         .row
+            p
+               | 専用の申し込みページをご案内しますので、下記にメールアドレスを入力後「送信」をクリックしてください。
+            .ui.form.success
+               .field
+                  label E-mail
+                  input(type='email', placeholder='joe@schmoe.com')
+               .ui.success.message
+                  .header Form Completed
+                  p You're all signed up for the newsletter.
+               .ui.submit.button 送信

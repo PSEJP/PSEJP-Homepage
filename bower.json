@@ -1,0 +1,17 @@
+{
+  "name": "psejp-homepage",
+  "description": "",
+  "main": "public",
+  "authors": [
+    "JohnsonChung <johnson780510@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/PSEJP/PSEJP-Homepage",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
