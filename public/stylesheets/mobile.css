@@ -5,15 +5,17 @@
 
     .secondary.pointing.menu .item,
     .secondary.pointing.menu .menu {
-        display: none;
+        display: none !important;
     }
 
     .secondary.pointing.menu .toc.item {
-        display: block;
+        display: block !important;
     }
 
     .masthead.segment {
         min-height: 350px;
+        background-size: 800% !important;
+        background-position: center 500% !important;
     }
 
     .masthead h1.ui.header {

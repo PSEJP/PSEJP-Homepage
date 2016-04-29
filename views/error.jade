@@ -1,6 +1,12 @@
 extends layout
 
 block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+  .ui.vertical.stripe.segment
+    .ui.middle.aligned.stackable.grid.container
+      .row
+        .center.aligned.column
+          h1= message
+      .row
+        .twelve.wide.column
+          p.pre= error.status
+          p.pre= error.stack

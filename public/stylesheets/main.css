@@ -5,6 +5,10 @@
 .masthead.segment {
     min-height: 480px;
     padding: 1em 0em;
+    background-color: #3a6183 !important;
+    background-image: url('../images/background.svg') !important;
+    background-size: 120% !important;
+    background-position: center  !important;
 }
 
 .masthead .logo.item img {
@@ -20,6 +24,23 @@
     margin-bottom: 0em;
     font-size: 4em;
     font-weight: normal;
+}
+/* CSS PSE LOGO */
+.masthead h1.ui.header .blue {
+    color: #6fbee3;
+}
+.masthead h1.ui.header .last {
+    position: relative;
+}
+.masthead h1.ui.header .last:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 0.06em;
+    width: 0.46em;
+    top: 0.2em;
+    left: 0.08em;
+    background-color: #6fbee3;
 }
 .masthead h2.ui.subheader {
     margin-bottom: 1.1em;
@@ -67,7 +88,12 @@
 .footer.segment {
     padding: 5em 0em;
 }
-
+.footer a.item.active {
+    text-decoration: underline !important;
+}
+.footer a.item.active::before {
+    content: '> '
+}
 .secondary.pointing.menu .toc.item {
     display: none;
 }

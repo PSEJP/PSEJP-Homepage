@@ -2,31 +2,26 @@ extends layout
 
 block content
     .ui.vertical.stripe.segment
-        .ui.middle.aligned.stackable.grid.container
-            .row
-                .center.aligned.column
-                    h1  協会のご案内
-            .row
-                .twelve.wide.column
-                    p.pre
-                        | 弊会サービスご利用を検討されているお客様および入会をご検討のエンジニアの方からのご質問を受け付けております。 下記フォームに入力いただき、送信ください。
-                        | お急ぎの場合は、電話にてご連絡をお願いいたします。（業務時間のみ）
+        .ui.text.container
+            h1.ui.center.aligned.header  お問合せ
+            p.pre
+                | 弊会サービスご利用を検討されているお客様および入会をご検討のエンジニアの方からのご質問を受け付けております。
+                | 下記フォームに入力いただき、送信ください。
+                | お急ぎの場合は、電話にてご連絡をお願いいたします。（業務時間のみ）
 
-                .four.wide.right.floated.column
-                    img.ui.large.bordered.rounded.image(src='assets/images/wireframe/white-image.png')
-            .row
-                .ui.form
+            .ui.form
+                .field
+                    label Text
+                    textarea
+                .three.fields
                     .field
-                        label Text
-                        textarea
-                    .three.fields
-                        .field
-                            label お名前
-                            input(type='text', placeholder='First Name')
-                        .field
-                            label E-mail
-                            input(type='email', placeholder='joe@schmoe.com')
+                        label お名前
+                        input(type='text', placeholder='First Name')
+                    .field
+                        label E-mail
+                        input(type='email', placeholder='joe@schmoe.com')
+                    .field
                         .ui.success.message
                             .header Form Completed
                             p You're all signed up for the newsletter.
-                        .ui.submit.button 送信
+                .ui.submit.button 送信

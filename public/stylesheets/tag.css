@@ -1,5 +1,17 @@
 body {
     font-family: 'Noto Sans Japanese', Lato,'Helvetica Neue',Arial, Helvetica, sans-serif !important;
+    transition: 0.3s ease-in;
+    transition-property: opacity, transform;
+    will-change: opacity, transform;
+    background-color: #545454 !important;
+}
+body.unresolved {
+    transition: 0.1s ease-in;
+    opacity: 0.75;
+    transform: scale(1.02);
+}
+h1, h2, h3, h4, p, a {
+    font-family: 'Noto Sans Japanese', Lato,'Helvetica Neue',Arial, Helvetica, sans-serif !important;
 }
 p.pre {
     white-space:pre-line;
