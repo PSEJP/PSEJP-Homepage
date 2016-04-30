@@ -1,3 +1,5 @@
+# FileETag MTime Size
+
 RewriteEngine on
 #if requested resource isn't a file
 # and isn't a directory
