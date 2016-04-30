@@ -41,7 +41,7 @@
     top: 0.2em;
     left: 0.08em;
     background-color: #6fbee3;
-}
+} /*\ END \*/
 .masthead h2.ui.subheader {
     margin-bottom: 1.1em;
 }
@@ -56,12 +56,12 @@
 }
 
 .ui.vertical.stripe h3 {
-    font-size: 2em;
+    /*font-size: 2em;*/
 }
 
 .ui.vertical.stripe .button + h3,
 .ui.vertical.stripe p + h3 {
-    margin-top: 3em;
+    /*margin-top: 3em;*/
 }
 
 .ui.vertical.stripe .floated.image {
@@ -69,7 +69,7 @@
 }
 
 .ui.vertical.stripe p {
-    font-size: 1.33em;
+    font-size: 1.13em;
 }
 
 .ui.vertical.stripe .horizontal.divider {

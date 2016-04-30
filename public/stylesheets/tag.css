@@ -13,6 +13,7 @@ body.unresolved {
 h1, h2, h3, h4, p, a {
     font-family: 'Noto Sans Japanese', Lato,'Helvetica Neue',Arial, Helvetica, sans-serif !important;
 }
+
 p.pre {
     white-space:pre-line;
 }
