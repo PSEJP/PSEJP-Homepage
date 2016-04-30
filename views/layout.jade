@@ -1,10 +1,11 @@
 doctype html
 html
+    - function href(s) { return env==='production' ? s + '.html' : s; };
     head
         title= title
         meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0")
-        link(rel='stylesheet', href='/dist/semantic.min.css')
-        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='dist/semantic.min.css')
+        link(rel='stylesheet', href='stylesheets/style.css')
         script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js')
         script(type="text/javascript", src='dist/semantic.min.js')
         script(type="text/javascript", src='javascripts/script.js')
@@ -18,13 +19,13 @@ html
     body.unresolved
         // Side Bar
         .ui.vertical.inverted.slide.along.sidebar.menu.left
-            a.item(class=title == 'home' ? 'active' : undefined, href="/") トップ
-            a.item(class=title == 'about' ? 'active' : undefined, href="/about") 協会のご案内
-            a.item(class=title == 'develop' ? 'active' : undefined, href="/develop") アプリ開発
-            a.item(class=title == 'online-support' ? 'active' : undefined, href="/online-support") オンサイトサポート
-            a.item(class=title == 'web-management' ? 'active' : undefined, href="/web-management") WEBサイト管理
-            a.item(class=title == 'recruit' ? 'active' : undefined, href="/recruit") 入会案内
-            a.item(class=title == 'support' ? 'active' : undefined, href="/support") お問合せ
+            a.item(class=title == 'home' ? 'active' : undefined, href=href("index")) トップ
+            a.item(class=title == 'about' ? 'active' : undefined, href=href("about")) 協会のご案内
+            a.item(class=title == 'develop' ? 'active' : undefined, href=href("develop")) アプリ開発
+            a.item(class=title == 'online-support' ? 'active' : undefined, href=href("online-support")) オンサイトサポート
+            a.item(class=title == 'web-management' ? 'active' : undefined, href=href("web-management")) WEBサイト管理
+            a.item(class=title == 'recruit' ? 'active' : undefined, href=href("recruit")) 入会案内
+            a.item(class=title == 'support' ? 'active' : undefined, href=href("support")) お問合せ
         .pusher
             // Navbar
             .ui.inverted.vertical.center.aligned.segment
@@ -32,14 +33,14 @@ html
                     .ui.large.secondary.inverted.pointing.menu
                         a.toc.toggle.item
                             i.sidebar.icon
-                        a.toc.item(class=title == 'home' ? 'active' : undefined, href="/") トップ
-                        a.item.scale(class=title == 'home' ? 'active' : undefined, href="/") トップ
-                        a.item.scale(class=title == 'about' ? 'active' : undefined, href="/about") 協会のご案内
-                        a.item.scale(class=title == 'develop' ? 'active' : undefined, href="/develop") アプリ開発
-                        a.item.scale(class=title == 'online-support' ? 'active' : undefined, href="/online-support") オンサイトサポート
-                        a.item.scale(class=title == 'web-management' ? 'active' : undefined, href="/web-management") WEBサイト管理
-                        a.item.scale(class=title == 'recruit' ? 'active' : undefined, href="/recruit") 入会案内
-                        a.item.scale(class=title == 'support' ? 'active' : undefined, href="/support") お問合せ
+                        a.toc.item(class=title == 'home' ? 'active' : undefined, href=href("index")) トップ
+                        a.item.scale(class=title == 'home' ? 'active' : undefined, href=href("index")) トップ
+                        a.item.scale(class=title == 'about' ? 'active' : undefined, href=href("about")) 協会のご案内
+                        a.item.scale(class=title == 'develop' ? 'active' : undefined, href=href("develop")) アプリ開発
+                        a.item.scale(class=title == 'online-support' ? 'active' : undefined, href=href("online-support")) オンサイトサポート
+                        a.item.scale(class=title == 'web-management' ? 'active' : undefined, href=href("web-management")) WEBサイト管理
+                        a.item.scale(class=title == 'recruit' ? 'active' : undefined, href=href("recruit")) 入会案内
+                        a.item.scale(class=title == 'support' ? 'active' : undefined, href=href("support")) お問合せ
 
             block content
             .ui.inverted.vertical.footer.segment
@@ -47,23 +48,23 @@ html
                     .ui.stackable.inverted.divided.equal.height.stackable.grid
                         .three.wide.column
                             .ui.inverted.link.list
-                                a.item(class=title == 'home' ? 'active' : undefined, href="/") PCサポート技術協会
+                                a.item(class=title == 'home' ? 'active' : undefined, href=href("index")) PCサポート技術協会
                         .three.wide.column
                             h4.ui.inverted.header About
                             .ui.inverted.link.list
-                                a.item(class=title == 'about' ? 'active' : undefined, href="/about") 協会のご案内
-                                a.item(class=title == 'recruit' ? 'active' : undefined, href="/recruit") 入会案内
+                                a.item(class=title == 'about' ? 'active' : undefined, href=href("about")) 協会のご案内
+                                a.item(class=title == 'recruit' ? 'active' : undefined, href=href("recruit")) 入会案内
 
                         .three.wide.column
                             h4.ui.inverted.header Services
                             .ui.inverted.link.list
-                                a.item(class=title == 'develop' ? 'active' : undefined, href="/develop") アプリ開発
-                                a.item(class=title == 'online-support' ? 'active' : undefined, href="/online-support") オンサイトサポート
-                                a.item(class=title == 'web-management' ? 'active' : undefined, href="/web-management") WEBサイト管理
+                                a.item(class=title == 'develop' ? 'active' : undefined, href=href("develop")) アプリ開発
+                                a.item(class=title == 'online-support' ? 'active' : undefined, href=href("online-support")) オンサイトサポート
+                                a.item(class=title == 'web-management' ? 'active' : undefined, href=href("web-management")) WEBサイト管理
                         .seven.wide.column
                             h4.ui.inverted.header サポート
                             .ui.inverted.link.list
-                                a.item(class=title == 'support' ? 'active' : undefined, href="/support") お問合せ
+                                a.item(class=title == 'support' ? 'active' : undefined, href=href("support")) お問合せ
                             img(src='images/phone.gif')
                             p
                                 | お急ぎの場合は、電話にてご連絡をお願いいたします。（業務時間のみ）

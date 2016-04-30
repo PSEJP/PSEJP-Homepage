@@ -25,7 +25,14 @@ var server = http.createServer(app);
  * Listen on provided port, on all network interfaces.
  */
 
-server.listen(port);
+server.listen(port, function () {
+  // send ready message to gulp
+  if (typeof process.send === 'function') {
+    process.send({
+      success: true
+    });
+  }
+});
 server.on('error', onError);
 server.on('listening', onListening);
 

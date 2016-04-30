@@ -14,6 +14,7 @@ var recruit = require('./routes/recruit');
 var support = require('./routes/support');
 
 var app = express();
+app.locals.env = app.settings.env;
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -28,6 +29,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
+app.use('/index', routes);
 app.use('/about', about);
 app.use('/develop', develop);
 app.use('/web-management', webManage);
