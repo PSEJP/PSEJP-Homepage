@@ -13,14 +13,14 @@ block content
             form.ui.form(method='post' action='/mail.php')
                 .field
                     label お問合せ
-                    textarea(required)
+                    textarea(required, name='お問合せ内容')
                 .three.fields
                     .field
                         label お名前
-                        input(type='text', placeholder='', required)
+                        input(type='text', placeholder='', required, name='名前')
                     .field
                         label E-mail
-                        input(type='email', placeholder='joe@schmoe.com', required)
+                        input(type='email', placeholder='joe@schmoe.com', required, name='Email')
                     .field
                         .ui.success.message
                             .header Form Completed
