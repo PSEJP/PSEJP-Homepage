@@ -10,19 +10,19 @@ block content
                 | 下記フォームに入力いただき、送信ください。
                 | お急ぎの場合は、電話にてご連絡をお願いいたします。（業務時間のみ）
 
-            .ui.form
+            form.ui.form(method='post' action='/mail.php')
                 .field
-                    label Text
-                    textarea
+                    label お問合せ
+                    textarea(required)
                 .three.fields
                     .field
                         label お名前
-                        input(type='text', placeholder='First Name')
+                        input(type='text', placeholder='', required)
                     .field
                         label E-mail
-                        input(type='email', placeholder='joe@schmoe.com')
+                        input(type='email', placeholder='joe@schmoe.com', required)
                     .field
                         .ui.success.message
                             .header Form Completed
                             p You're all signed up for the newsletter.
-                .ui.submit.button 送信
+                input.ui.submit.button(type='submit')= 送信
