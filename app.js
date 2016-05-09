@@ -12,6 +12,7 @@ var webManage = require('./routes/web-management');
 var onlineSupport = require('./routes/online-support');
 var recruit = require('./routes/recruit');
 var support = require('./routes/support');
+var thankyou = require('./routes/thankyou');
 
 var app = express();
 app.locals.env = app.settings.env;
@@ -36,6 +37,7 @@ app.use('/web-management', webManage);
 app.use('/online-support', onlineSupport);
 app.use('/recruit', recruit);
 app.use('/support', support);
+app.use('/thankyou', thankyou);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -32,6 +32,7 @@ gulp.task('default', () => {
             '/online-support': 'online-support.html',
             '/recruit': 'recruit.html',
             '/support': 'support.html',
+            '/thankyou': 'thankyou.html',
             '/404': '404.html'
         };
 
